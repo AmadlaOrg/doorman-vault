@@ -1,0 +1,10 @@
+---
+name: Pre-Build Workflow
+on:
+  push:
+    branches:
+      - master
+      - develop
+jobs:
+  call-pre-build:
+    uses: AmadlaOrg/GitHub-Actions/.github/workflows/golang-pre-build.yml@master
